@@ -68,4 +68,10 @@ It highlights navigation paths, dashboard customization, Cloud Shell usage, and 
 
 ## Screenshots
 
-![alt text](<Screenshot 2026-07-11 221135.png>) ![alt text](<Screenshot 2026-07-11 221209.png>) ![alt text](<Screenshot 2026-07-11 221527.png>) ![alt text](<Screenshot 2026-07-11 222541.png>)
+![alt text](<Screenshot 2026-07-11 221135.png>) 
+---
+![alt text](<Screenshot 2026-07-11 221209.png>) 
+---
+![alt text](<Screenshot 2026-07-11 221527.png>)
+---
+![alt text](<Screenshot 2026-07-11 222541.png>)

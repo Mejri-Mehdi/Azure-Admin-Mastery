@@ -1,0 +1,4 @@
+Name                     CloudName    SubscriptionId                       State    IsDefault
+-----------------------  -----------  ------------------------------------  -------  -----------
+Pay-As-You-Go            AzureCloud   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  Enabled  True
+Visual Studio Enterprise AzureCloud   yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Enabled  False

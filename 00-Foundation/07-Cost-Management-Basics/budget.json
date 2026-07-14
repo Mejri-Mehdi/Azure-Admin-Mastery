@@ -1,0 +1,29 @@
+{
+  "amount": "10.0",
+  "category": "Cost",
+  "currentSpend": {
+    "amount": "0.0",
+    "unit": "USD"
+  },
+  "eTag": "\"1dd13ccd26b441c\"",
+  "id": "/subscriptions/099a5b10-d715-4779-86af-d99d0e4ab3b9/providers/Microsoft.Consumption/budgets/Monthly-10USD-Budget",
+  "name": "Monthly-10USD-Budget",
+  "notifications": {
+    "actual_GreaterThan_80_Percent": {
+      "contactEmails": [
+        "mehdimejri15@gmail.com"
+      ],
+      "contactGroups": [],
+      "contactRoles": [],
+      "enabled": true,
+      "operator": "GreaterThan",
+      "threshold": "80.0"
+    }
+  },
+  "timeGrain": "Monthly",
+  "timePeriod": {
+    "endDate": "2028-06-30T00:00:00Z",
+    "startDate": "2026-07-01T00:00:00Z"
+  },
+  "type": "Microsoft.Consumption/budgets"
+}

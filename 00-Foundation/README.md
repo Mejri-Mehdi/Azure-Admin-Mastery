@@ -1,4 +1,4 @@
-# 00-Foundation: Core Azure Setup & Governance
+# 00-Foundation: Core Azure Setup & Governance 
 
 This section establishes the essential tooling, identity, governance, and knowledge baseline for an Azure environment.
 

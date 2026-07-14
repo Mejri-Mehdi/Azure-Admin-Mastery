@@ -1,0 +1,64 @@
+{
+  "properties": {
+    "displayName": "Require mandatory tags on resource groups",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy enforces the presence of Environment, CostCenter, and Owner tags on all resource groups.",
+    "metadata": {
+      "category": "Tags"
+    },
+    "parameters": {
+      "environmentTag": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Environment tag name",
+          "description": "Name of the tag, e.g. Environment"
+        },
+        "defaultValue": "Environment"
+      },
+      "costCenterTag": {
+        "type": "String",
+        "metadata": {
+          "displayName": "CostCenter tag name"
+        },
+        "defaultValue": "CostCenter"
+      },
+      "ownerTag": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Owner tag name"
+        },
+        "defaultValue": "Owner"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Resources/resourceGroups"
+          },
+          {
+            "anyOf": [
+              {
+                "field": "[concat('tags[', parameters('environmentTag'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('costCenterTag'), ']')]",
+                "exists": "false"
+              },
+              {
+                "field": "[concat('tags[', parameters('ownerTag'), ']')]",
+                "exists": "false"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  }
+}

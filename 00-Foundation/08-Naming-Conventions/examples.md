@@ -25,7 +25,7 @@ All examples follow the pattern defined in `naming-convention.md`.
 14. `vnet-dev-portal-weu-001` – Development portal network
 15. `vnet-sbx-ai-frc-001` – Sandbox AI network
 
-## Network Security Groups
+## Network Security Groups 
 16. `nsg-prod-hr-frc-001` – NSG for production HR subnet
 17. `nsg-dev-portal-weu-001` – NSG for development portal subnet
 

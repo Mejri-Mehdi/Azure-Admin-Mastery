@@ -1,0 +1,4 @@
+﻿displayName,id,groupType,membershipType,mail,source,mailEnabled,onPremisesSyncEnabled
+MG-Project-Team,ff03143b-33d6-4bb3-8c57-84dba62f0a72,Microsoft 365,assigned,MG-Project-Team@mehdimejri15gmail.onmicrosoft.com,Cloud,True,
+SG-Developers,9b16c233-55b8-466f-be3b-5aeedb9126eb,Security,assigned,,Cloud,False,
+SG-IT-Admins,2ea5fe34-834d-4d5b-a8ac-55094255e8e3,Security,assigned,,Cloud,False,

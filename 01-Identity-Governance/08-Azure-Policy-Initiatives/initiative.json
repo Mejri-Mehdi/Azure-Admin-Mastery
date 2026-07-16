@@ -1,0 +1,69 @@
+{
+  "properties": {
+    "displayName": "Secure Baseline Initiative",
+    "policyType": "Custom",
+    "description": "Governs tag requirements, allowed locations, and VM backup compliance",
+    "metadata": {
+      "category": "My Governance",
+      "createdBy": "a5d09be1-7543-419d-b78e-9d4fbc230cdb",
+      "createdOn": "2026-07-16T20:47:19.8080635Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "version": "1.0.0",
+    "parameters": {},
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Require a tag on resource groups_1",
+        "policyDefinitionId": "/providers/microsoft.authorization/policydefinitions/96670d01-0a4d-4649-9c89-2d3abc0a5025",
+        "definitionVersion": "1.0.*",
+        "effectiveDefinitionVersion": "1.0.0",
+        "parameters": {
+          "tagName": {
+            "value": "CostCenter"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Allowed locations_1",
+        "policyDefinitionId": "/providers/microsoft.authorization/policydefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+        "definitionVersion": "1.1.*",
+        "effectiveDefinitionVersion": "1.1.0",
+        "parameters": {
+          "listOfAllowedLocations": {
+            "value": [
+              "eastus",
+              "westus2",
+              "francecentral"
+            ]
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Azure Backup should be enabled for Virtual Machines_1",
+        "policyDefinitionId": "/providers/microsoft.authorization/policydefinitions/013e242c-8828-4970-87b3-ab247555486d",
+        "definitionVersion": "3.0.*",
+        "effectiveDefinitionVersion": "3.0.0",
+        "parameters": {},
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": [],
+    "versions": [
+      "1.0.0"
+    ]
+  },
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/providers/Microsoft.Authorization/policySetDefinitions/c0a7c74f12db5b0dbd53a899",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "c0a7c74f12db5b0dbd53a899",
+  "systemData": {
+    "createdBy": "mehdimejri15@gmail.com",
+    "createdByType": "User",
+    "createdAt": "2026-07-16T20:47:19.7701826Z",
+    "lastModifiedBy": "mehdimejri15@gmail.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2026-07-16T20:47:19.7701826Z"
+  }
+}

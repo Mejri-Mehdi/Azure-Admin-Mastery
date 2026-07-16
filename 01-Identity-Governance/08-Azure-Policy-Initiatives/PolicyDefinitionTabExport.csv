@@ -1,0 +1,4 @@
+"Policy","Version","Reference ID","Type","Evaluation type","Default effect"
+"Require a tag on resource groups","1.0.*","Require a tag on resource groups_1","BuiltIn","Automated","Deny"
+"Allowed locations","1.1.*","Allowed locations_1","BuiltIn","Automated","Deny"
+"Azure Backup should be enabled for Virtual Machines","3.0.*","Azure Backup should be enabled for Virtual Machines_1","BuiltIn","Automated","AuditIfNotExists"

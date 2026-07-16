@@ -1,1 +1,11 @@
-[{"RoleAssignmentId":"4b9042e6-9d1e-455d-bfaa-114975a91ec3","Scope":"/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00","DisplayName":"Mahdouch D STAR","SignInName":"mehdimejri15_gmail.com#EXT#@mehdimejri15gmail.onmicrosoft.com","RoleDefinitionName":"Owner","RoleDefinitionId":"/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635","ObjectId":"a5d09be1-7543-419d-b78e-9d4fbc230cdb","ObjectType":"User","RoleAssignmentDescription":"","ConditionVersion":"","Condition":""}]
+[{"RoleAssignmentId":"4b9042e6-9d1e-455d-bfaa-114975a91ec3",
+"Scope":"/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00",
+"DisplayName":"Mahdouch D STAR",
+"SignInName":"mehdimejri15_gmail.com#EXT#@mehdimejri15gmail.onmicrosoft.com",
+"RoleDefinitionName":"Owner",
+"RoleDefinitionId":"/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+"ObjectId":"a5d09be1-7543-419d-b78e-9d4fbc230cdb",
+"ObjectType":"User",
+"RoleAssignmentDescription":"",
+"ConditionVersion":"",
+"Condition":""}]

@@ -70,7 +70,7 @@ It shows how roles applied at higher scopes flow down to lower scopes, and how r
 - Test **role inheritance** across management groups.  
 - Combine RBAC with **Azure Policy** for governance.
 
-## Screenshot
+## Inheritance Diagram
 
 ---
 ![alt text](inheritance-diagram.png)

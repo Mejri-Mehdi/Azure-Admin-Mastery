@@ -73,4 +73,4 @@ It shows how roles applied at higher scopes flow down to lower scopes, and how r
 ## Screenshot
 
 ---
-![alt text](<Screenshot 2026-07-16 194913.png>)
+![alt text](inheritance-diagram.png)

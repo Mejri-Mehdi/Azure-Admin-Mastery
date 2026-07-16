@@ -24,3 +24,45 @@ Always verify least privilege: give users only the permissions they need. Our te
 
 ## License
 RBAC (role‑based access control) is a free feature of Azure Active Directory (Entra ID) and does not require a premium license.
+
+## Overview
+This project demonstrates assigning and testing **Azure RBAC built-in roles** at different scopes.  
+It covers Owner, Contributor, Reader, and specialized roles like VM Contributor and Storage Blob Data Reader.
+
+---
+
+## Steps Completed
+1. Created resource group `rg-rbac-lab`.  
+2. Assigned built-in roles to 5 users at RG and resource scopes.  
+3. Logged in as each user to test capabilities.  
+4. Verified role assignments and deny assignments in IAM.  
+
+---
+
+## Key Concepts
+- **Owner** → Full access + can assign roles.  
+- **Contributor** → Full access, cannot assign roles.  
+- **Reader** → View-only access.  
+- **User Access Administrator** → Can assign roles only (requires Global Admin).  
+- **Inheritance** → Roles assigned at subscription flow down to RG and resources.  
+
+---
+
+## Deliverables
+- **rbac-matrix.md** → User × Scope × Role matrix.  
+- **testing-results.md** → Documented user capabilities.  
+- **README.md** → Explanation of built-in roles.  
+
+---
+
+## Lessons Learned
+- RBAC roles define least privilege access.  
+- Scope matters: subscription → RG → resource.  
+- Specialized roles (VM Contributor, Storage Blob Data Reader) provide granular control.  
+
+---
+
+## Next Steps
+- Explore **custom RBAC roles** for fine-grained permissions.  
+- Test **scope inheritance** across subscription and RG.  
+- Integrate RBAC with **Azure Policy** for governance.

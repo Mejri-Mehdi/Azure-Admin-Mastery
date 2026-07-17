@@ -1,14 +1,15 @@
 # Management Group Hierarchy
 
-Tenant Root Group (Built-in)
-│
-└── MG-Root
-    │
-    ├── MG-Production
-    │   
-    │
-    └── MG-NonProduction
-              └── Subscription (Currently here)
+Tenant Root Group
+        |
+        |
+     MG-Root
+     /     \
+    /       \
+MG-Production   MG-NonProduction
+      |
+      |
+Your Subscription
 
 
 - **MG-Root**: Top‑level management group for all subscriptions.

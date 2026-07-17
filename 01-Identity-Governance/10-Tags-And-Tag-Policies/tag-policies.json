@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Inherit Environment tag from resource group",
+    "type": "BuiltIn (Append)",
+    "parameters": {
+      "tagName": "Environment"
+    },
+    "effect": "Append"
+  },
+  {
+    "name": "Require Environment tag with allowed values",
+    "type": "Custom",
+    "policyRule": {
+      "if": {
+        "anyOf": [
+          { "field": "tags[Environment]", "exists": "false" },
+          { "field": "tags[Environment]", "notIn": ["Production","Development","Testing"] }
+        ]
+      },
+      "then": { "effect": "deny" }
+    }
+  },
+  {
+    "name": "Require Owner tag with email format",
+    "type": "Custom",
+    "policyRule": {
+      "if": {
+        "anyOf": [
+          { "field": "tags[Owner]", "exists": "false" },
+          { "field": "tags[Owner]", "notMatch": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" }
+        ]
+      },
+      "then": { "effect": "deny" }
+    }
+  }
+]

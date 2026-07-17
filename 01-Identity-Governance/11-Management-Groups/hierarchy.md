@@ -6,11 +6,10 @@ Tenant Root Group (Built-in)
 │
 └── MG-Root
     │
-    ├── MG-Production
-    │   
+    ├── MG-NonProduction
+    │           └── Subscription (Currently here)
     │
-    └── MG-NonProduction
-                └── Subscription (Currently here)
+    └── MG-Production
 
 ```
 

@@ -1,0 +1,11 @@
+{
+  "name": "Budget-Alert-Group",
+  "shortName": "BudgetAG",
+  "enabled": true,
+  "emailReceivers": [
+    { "name": "AdminEmail", "emailAddress": "mehdimejri15@gmail.com" }
+  ],
+  "smsReceivers": [
+    { "name": "AdminSMS", "countryCode": "1", "phoneNumber": "5551234567" }
+  ]
+}

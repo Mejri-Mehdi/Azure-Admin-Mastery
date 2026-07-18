@@ -1,0 +1,58 @@
+{
+  "rules": [
+    {
+      "enabled": true,
+      "name": "MoveToCoolAfter30Days",
+      "type": "Lifecycle",
+      "definition": {
+        "actions": {
+          "baseBlob": {
+            "tierToCool": {
+              "daysAfterModificationGreaterThan": 30
+            }
+          }
+        },
+        "filters": {
+          "blobTypes": ["blockBlob"],
+          "prefixMatch": ["documents/important/"]
+        }
+      }
+    },
+    {
+      "enabled": true,
+      "name": "MoveToArchiveAfter90Days",
+      "type": "Lifecycle",
+      "definition": {
+        "actions": {
+          "baseBlob": {
+            "tierToArchive": {
+              "daysAfterModificationGreaterThan": 90
+            }
+          }
+        },
+        "filters": {
+          "blobTypes": ["blockBlob"],
+          "prefixMatch": ["documents/important/"]
+        }
+      }
+    },
+    {
+      "enabled": true,
+      "name": "DeleteAfter365Days",
+      "type": "Lifecycle",
+      "definition": {
+        "actions": {
+          "baseBlob": {
+            "delete": {
+              "daysAfterModificationGreaterThan": 365
+            }
+          }
+        },
+        "filters": {
+          "blobTypes": ["blockBlob"],
+          "prefixMatch": ["documents/important/"]
+        }
+      }
+    }
+  ]
+}

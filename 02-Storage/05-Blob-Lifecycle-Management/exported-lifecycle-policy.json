@@ -1,0 +1,111 @@
+{
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-lifecycle/providers/Microsoft.Storage/storageAccounts/lifecyclexyz123/managementPolicies/default",
+  "lastModifiedTime": "2026-07-18T17:35:08.062246+00:00",
+  "name": "DefaultManagementPolicy",
+  "policy": {
+    "rules": [
+      {
+        "definition": {
+          "actions": {
+            "baseBlob": {
+              "delete": null,
+              "enableAutoTierToHotFromCool": null,
+              "tierToArchive": null,
+              "tierToCold": null,
+              "tierToCool": {
+                "daysAfterCreationGreaterThan": null,
+                "daysAfterLastAccessTimeGreaterThan": null,
+                "daysAfterLastTierChangeGreaterThan": null,
+                "daysAfterModificationGreaterThan": 30.0
+              },
+              "tierToHot": null
+            },
+            "snapshot": null,
+            "version": null
+          },
+          "filters": {
+            "blobIndexMatch": null,
+            "blobTypes": [
+              "blockBlob"
+            ],
+            "prefixMatch": [
+              "documents/important/"
+            ]
+          }
+        },
+        "enabled": true,
+        "name": "MoveToCoolAfter30Days",
+        "type": "Lifecycle"
+      },
+      {
+        "definition": {
+          "actions": {
+            "baseBlob": {
+              "delete": null,
+              "enableAutoTierToHotFromCool": null,
+              "tierToArchive": {
+                "daysAfterCreationGreaterThan": null,
+                "daysAfterLastAccessTimeGreaterThan": null,
+                "daysAfterLastTierChangeGreaterThan": null,
+                "daysAfterModificationGreaterThan": 90.0
+              },
+              "tierToCold": null,
+              "tierToCool": null,
+              "tierToHot": null
+            },
+            "snapshot": null,
+            "version": null
+          },
+          "filters": {
+            "blobIndexMatch": null,
+            "blobTypes": [
+              "blockBlob"
+            ],
+            "prefixMatch": [
+              "documents/important/"
+            ]
+          }
+        },
+        "enabled": true,
+        "name": "MoveToArchiveAfter90Days",
+        "type": "Lifecycle"
+      },
+      {
+        "definition": {
+          "actions": {
+            "baseBlob": {
+              "delete": {
+                "daysAfterCreationGreaterThan": null,
+                "daysAfterLastAccessTimeGreaterThan": null,
+                "daysAfterLastTierChangeGreaterThan": null,
+                "daysAfterModificationGreaterThan": 365.0
+              },
+              "enableAutoTierToHotFromCool": null,
+              "tierToArchive": null,
+              "tierToCold": null,
+              "tierToCool": null,
+              "tierToHot": null
+            },
+            "snapshot": null,
+            "version": null
+          },
+          "filters": {
+            "blobIndexMatch": null,
+            "blobTypes": [
+              "blockBlob"
+            ],
+            "prefixMatch": [
+              "documents/important/"
+            ]
+          }
+        },
+        "enabled": true,
+        "name": "DeleteAfter365Days",
+        "type": "Lifecycle"
+      }
+    ]
+  },
+  "resourceGroup": "rg-lifecycle",
+  "systemData": null,
+  "type": "Microsoft.Storage/storageAccounts/managementPolicies"
+}

@@ -38,6 +38,8 @@ Azure Storage lifecycle management policies can automatically move blobs between
 ---
 ![alt text](<Screenshot 2026-07-18 173730.png>)
 ---
+![alt text](<Screenshot 2026-07-18 193044.png>)
+---
 
 ## Lessons Learned
 - Blob tiers optimize cost vs performance trade-offs.  

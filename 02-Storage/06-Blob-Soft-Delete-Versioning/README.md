@@ -32,3 +32,8 @@ These features form a layered defense against accidental deletion, ransomware, a
 ![alt text](<Screenshot 2026-07-21 192210.png>)
 ---
 ![alt text](<Screenshot 2026-07-21 194031.png>)
+
+## Lessons Learned
+- Soft delete provides safety net for accidental deletions.  
+- Versioning enables rollback to previous blob states.  
+- Immutable storage enforces compliance and legal requirements.  

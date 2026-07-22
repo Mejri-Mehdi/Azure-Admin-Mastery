@@ -1,0 +1,23 @@
+{
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-objrepl/providers/Microsoft.Storage/storageAccounts/objsrceusxyz123/objectReplicationPolicies/e0df6383-12c7-4f9b-a446-322c284cdd2a",
+  "name": "e0df6383-12c7-4f9b-a446-322c284cdd2a",
+  "type": "Microsoft.Storage/storageAccounts/objectReplicationPolicies",
+  "properties": {
+    "priorityReplication": {
+      "enabled": true
+    },
+    "metrics": {
+      "enabled": true
+    },
+    "policyId": "e0df6383-12c7-4f9b-a446-322c284cdd2a",
+    "sourceAccount": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-objrepl/providers/Microsoft.Storage/storageAccounts/objsrceusxyz123",
+    "destinationAccount": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-objrepl/providers/Microsoft.Storage/storageAccounts/objdestwus2xyz123",
+    "rules": [
+      {
+        "ruleId": "ab044852-ab19-41cb-84b9-b8bcadd3ec68",
+        "sourceContainer": "docs",
+        "destinationContainer": "docs-replica"
+      }
+    ]
+  }
+}

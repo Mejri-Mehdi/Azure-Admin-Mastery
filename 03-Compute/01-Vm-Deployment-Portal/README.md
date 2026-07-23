@@ -42,6 +42,8 @@ This portal‑based deployment serves as the foundation for all subsequent compu
 ---
 ![alt text](<Screenshot 2026-07-23 161727.png>)
 ---
+![alt text](<Screenshot 2026-07-23 162156.png>)
+---
 
 ## Lessons Learned
 - Portal blades provide full control over VM configuration.  

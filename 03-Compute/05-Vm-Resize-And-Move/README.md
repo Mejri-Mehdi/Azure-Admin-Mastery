@@ -45,6 +45,8 @@
 ---
 ![alt text](<Screenshot 2026-07-23 214704.png>)
 ---
+![alt text](<Screenshot 2026-07-23 215733.png>)
+---
 
 ## Lessons Learned
 - VM resizing requires downtime.  

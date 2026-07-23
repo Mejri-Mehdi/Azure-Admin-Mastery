@@ -29,6 +29,10 @@ ADE adds an extra layer of protection: even if a VHD is leaked, the volume is us
 5. Took a snapshot of the OS disk and created a new managed disk from it.
 6. Attached that new disk to a second VM, demonstrating snapshot‑based recovery.
 
+## Screenshot
+
+---
+![alt text](<Screenshot 2026-07-23 211435.png>)
 ---
 
 ## Lessons Learned

@@ -1,0 +1,32 @@
+{
+  "duration": "03:00",
+  "extensionProperties": {
+    "InGuestPatchMode": "User"
+  },
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourcegroups/rg-compute-lab/providers/microsoft.maintenance/maintenanceconfigurations/sundaymaintenance",
+  "installPatches": {
+    "linuxParameters": {
+      "classificationsToInclude": [
+        "Critical",
+        "Security"
+      ]
+    },
+    "rebootSetting": "IfRequired",
+    "windowsParameters": {
+      "classificationsToInclude": [
+        "Critical",
+        "Security"
+      ]
+    }
+  },
+  "location": "eastus",
+  "maintenanceScope": "InGuestPatch",
+  "name": "SundayMaintenance",
+  "recurEvery": "1Day",
+  "resourceGroup": "rg-compute-lab",
+  "startDateTime": "2026-07-27 02:00",
+  "tags": {},
+  "timeZone": "W. Central Africa Standard Time",
+  "type": "Microsoft.Maintenance/maintenanceConfigurations",
+  "visibility": "Custom"
+}

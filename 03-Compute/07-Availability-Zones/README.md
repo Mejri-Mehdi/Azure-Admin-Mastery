@@ -24,13 +24,13 @@ Not all Azure regions support Availability Zones. Always check the [Azure region
 ## Screenshots
 
 ---
-![alt text](<Screenshot 2026-07-24 125858.png>) 
----
 ![alt text](<Screenshot 2026-07-24 123429.png>) 
 ---
 ![alt text](<Screenshot 2026-07-24 124630.png>) 
 ---
 ![alt text](<Screenshot 2026-07-24 124822.png>) 
+---
+![alt text](<Screenshot 2026-07-24 125858.png>) 
 ---
 ![alt text](<Screenshot 2026-07-24 125750.png>)
 ---

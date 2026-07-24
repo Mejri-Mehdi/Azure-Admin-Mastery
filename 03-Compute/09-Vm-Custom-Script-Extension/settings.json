@@ -1,0 +1,6 @@
+{
+  "fileUris": [
+    " https://stgcsxyz123.blob.core.windows.net/scripts/install-iis.ps1?se=2026-07-24T17%3A18Z&sp=r&sv=2026-04-06&sr=b&sig=P5oxX4zJzXK59g9U3uSQo7UaeMYVRH8l0TlaEkNhoTY%3D"
+  ],
+  "commandToExecute": "powershell -ExecutionPolicy Bypass -File install-iis.ps1"
+}

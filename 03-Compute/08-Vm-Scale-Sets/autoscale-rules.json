@@ -1,0 +1,76 @@
+{
+  "enabled": true,
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-vmss-lab/providers/microsoft.insights/autoscalesettings/autoscale-cpu",
+  "location": "eastus2",
+  "name": "autoscale-cpu",
+  "notifications": [
+    {
+      "email": {
+        "customEmails": [],
+        "sendToSubscriptionAdministrator": false,
+        "sendToSubscriptionCoAdministrators": false
+      },
+      "operation": "Scale",
+      "webhooks": []
+    }
+  ],
+  "predictiveAutoscalePolicy": {
+    "scaleMode": "Disabled"
+  },
+  "profiles": [
+    {
+      "capacity": {
+        "default": "2",
+        "maximum": "5",
+        "minimum": "2"
+      },
+      "name": "default",
+      "rules": [
+        {
+          "metricTrigger": {
+            "dividePerInstance": false,
+            "metricName": "Percentage CPU",
+            "metricNamespace": "",
+            "metricResourceUri": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-vmss-lab/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-web",
+            "operator": "GreaterThan",
+            "statistic": "Average",
+            "threshold": 75.0,
+            "timeAggregation": "Average",
+            "timeGrain": "PT1M",
+            "timeWindow": "PT5M"
+          },
+          "scaleAction": {
+            "cooldown": "PT5M",
+            "direction": "Increase",
+            "type": "ChangeCount",
+            "value": "1"
+          }
+        },
+        {
+          "metricTrigger": {
+            "dividePerInstance": false,
+            "metricName": "Percentage CPU",
+            "metricNamespace": "",
+            "metricResourceUri": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-vmss-lab/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-web",
+            "operator": "LessThan",
+            "statistic": "Average",
+            "threshold": 25.0,
+            "timeAggregation": "Average",
+            "timeGrain": "PT1M",
+            "timeWindow": "PT5M"
+          },
+          "scaleAction": {
+            "cooldown": "PT5M",
+            "direction": "Decrease",
+            "type": "ChangeCount",
+            "value": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "resourceGroup": "rg-vmss-lab",
+  "tags": {},
+  "targetResourceUri": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-vmss-lab/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-web",
+  "type": "Microsoft.Insights/autoscaleSettings"
+}

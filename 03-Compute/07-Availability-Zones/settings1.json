@@ -1,0 +1,3 @@
+{
+  "commandToExecute": "powershell -Command \"Install-WindowsFeature -Name Web-Server; Add-Content -Path C:\\inetpub\\wwwroot\\Default.htm -Value 'Hello from VM in Zone 1!'\""
+}

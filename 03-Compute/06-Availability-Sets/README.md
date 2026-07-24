@@ -36,7 +36,7 @@ An Availability Set is a logical grouping of VMs that ensures Azure distributes 
 ## Screenshots 
 
 ---
-![alt text](fd-ud-diagram.drawio.png)
+![alt text](fd-ud-diagram.png)
 ---
 ![alt text](<Screenshot 2026-07-24 112715.png>) 
 ---

@@ -23,8 +23,42 @@
 ## Screenshot
 
 ---
-
-
+![alt text](<Screenshot 2026-07-24 210230.png>)
+---
+![alt text](<Screenshot 2026-07-24 210258.png>)
+---
+![alt text](<Screenshot 2026-07-24 210310.png>)
+---
+![alt text](<Screenshot 2026-07-24 210332.png>)
+---
+![alt text](<Screenshot 2026-07-24 210444.png>)
+---
+![alt text](<Screenshot 2026-07-24 211554.png>)
+---
+![alt text](<Screenshot 2026-07-24 211637.png>)
+---
+![alt text](<Screenshot 2026-07-24 211712.png>)
+---
+![alt text](<Screenshot 2026-07-24 211752.png>)
+---
+![alt text](<Screenshot 2026-07-24 211848.png>)
+---
+![alt text](<Screenshot 2026-07-24 212010.png>)
+---
+![alt text](<Screenshot 2026-07-24 212317.png>)
+---
+![alt text](<Screenshot 2026-07-24 212334.png>)
+---
+![alt text](<Screenshot 2026-07-24 212400.png>)
+---
+![alt text](<Screenshot 2026-07-24 212426.png>)
+---
+![alt text](<Screenshot 2026-07-24 212435.png>)
+---
+![alt text](<Screenshot 2026-07-24 212454.png>)
+---
+![alt text](<Screenshot 2026-07-24 212459.png>)
+---
 
 ## Lessons Learned
 - Container Apps simplify Kubernetes for developers.  

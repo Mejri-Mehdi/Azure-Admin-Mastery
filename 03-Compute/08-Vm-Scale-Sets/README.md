@@ -36,12 +36,22 @@ A Virtual Machine Scale Set (VMSS) is a group of identical, load‑balanced VMs 
 ---
 ![alt text](<Screenshot 2026-07-24 135629.png>)
 ---
-![alt text](<Screenshot 2026-07-24 140339.png>)
----
 ![alt text](<Screenshot 2026-07-24 140406.png>)
 ---
-
-
+![alt text](<Screenshot 2026-07-24 140339.png>)
+---
+![alt text](<Screenshot 2026-07-24 141557.png>)
+---
+![alt text](<Screenshot 2026-07-24 143903.png>)
+---
+![alt text](<Screenshot 2026-07-24 144453.png>)
+---
+![alt text](<Screenshot 2026-07-24 144132.png>)
+---
+![alt text](<Screenshot 2026-07-24 144508.png>)
+---
+![alt text](<Screenshot 2026-07-24 144534.png>)
+---
 
 ## Lessons Learned
 - VMSS provides elasticity and high availability.  

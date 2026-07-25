@@ -24,3 +24,50 @@ Access Restrictions are inbound IP firewalls that control which public IPs can r
 - Use **Private Endpoint** to lock down inbound access completely.
 - Combine with **Access Restrictions** for defense‑in‑depth.
 
+## Screenshots
+
+---
+![alt text](<Screenshot 2026-07-25 171407.png>)
+---
+![alt text](<Screenshot 2026-07-25 171429.png>)
+---
+![alt text](<Screenshot 2026-07-25 171604.png>)
+---
+![alt text](<Screenshot 2026-07-25 171647.png>)
+---
+![alt text](<Screenshot 2026-07-25 171656.png>)
+---
+![alt text](<Screenshot 2026-07-25 171700.png>)
+---
+![alt text](<Screenshot 2026-07-25 172036.png>)
+---
+![alt text](<Screenshot 2026-07-25 172324.png>)
+---
+![alt text](<Screenshot 2026-07-25 174232.png>)
+---
+![alt text](<Screenshot 2026-07-25 174501.png>)
+---
+![alt text](<Screenshot 2026-07-25 174524.png>)
+---
+![alt text](<Screenshot 2026-07-25 174710.png>)
+---
+![alt text](<Screenshot 2026-07-25 174920.png>)
+---
+![alt text](<Screenshot 2026-07-25 175443.png>)
+---
+![alt text](<Screenshot 2026-07-25 175453.png>)
+---
+![alt text](<Screenshot 2026-07-25 175708.png>)
+---
+![alt text](<Screenshot 2026-07-25 175715.png>)
+---
+![alt text](<Screenshot 2026-07-25 180227.png>)
+---
+![alt text](<Screenshot 2026-07-25 181004.png>)
+---
+
+## Lessons Learned
+- VNet integration enables secure outbound connectivity.  
+- Private endpoints provide secure inbound access.  
+- Access restrictions enforce IP‑based security.  
+

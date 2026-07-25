@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appscale/providers/microsoft.insights/autoscalesettings/autoscale-cpu",
+  "location": "West US 2",
+  "name": "autoscale-cpu",
+  "notifications": [],
+  "predictiveAutoscalePolicy": {
+    "scaleMode": "Disabled"
+  },
+  "profiles": [
+    {
+      "capacity": {
+        "default": "1",
+        "maximum": "3",
+        "minimum": "1"
+      },
+      "name": "Auto created default scale condition",
+      "rules": [
+        {
+          "metricTrigger": {
+            "dimensions": [],
+            "dividePerInstance": false,
+            "metricName": "CpuPercentage",
+            "metricNamespace": "microsoft.web/serverfarms",
+            "metricResourceUri": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appscale/providers/Microsoft.Web/serverFarms/testplan",
+            "operator": "GreaterThan",
+            "statistic": "Average",
+            "threshold": 70.0,
+            "timeAggregation": "Average",
+            "timeGrain": "PT1M",
+            "timeWindow": "PT10M"
+          },
+          "scaleAction": {
+            "cooldown": "PT5M",
+            "direction": "Increase",
+            "type": "ChangeCount",
+            "value": "1"
+          }
+        },
+        {
+          "metricTrigger": {
+            "dimensions": [],
+            "dividePerInstance": false,
+            "metricName": "CpuPercentage",
+            "metricNamespace": "microsoft.web/serverfarms",
+            "metricResourceUri": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appscale/providers/Microsoft.Web/serverFarms/testplan",
+            "operator": "LessThan",
+            "statistic": "Average",
+            "threshold": 20.0,
+            "timeAggregation": "Average",
+            "timeGrain": "PT1M",
+            "timeWindow": "PT10M"
+          },
+          "scaleAction": {
+            "cooldown": "PT5M",
+            "direction": "Decrease",
+            "type": "ChangeCount",
+            "value": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "resourceGroup": "rg-appscale",
+  "tags": {},
+  "targetResourceUri": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appscale/providers/Microsoft.Web/serverFarms/testplan",
+  "type": "Microsoft.Insights/autoscaleSettings"
+}

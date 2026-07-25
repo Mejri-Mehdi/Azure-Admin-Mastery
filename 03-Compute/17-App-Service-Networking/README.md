@@ -27,7 +27,7 @@ Access Restrictions are inbound IP firewalls that control which public IPs can r
 ## Screenshots
 
 ---
-![alt text](Topology_Explained.png)
+
 ---
 ![alt text](<Screenshot 2026-07-25 171407.png>)
 ---

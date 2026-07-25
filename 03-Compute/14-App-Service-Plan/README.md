@@ -22,3 +22,43 @@ Think of an **App Service Plan** as a hotel building with rooms (instances). Eac
 - The Free and Shared tiers run on shared VMs (other customers on same hardware); Basic and above use dedicated VMs.
 - Isolated tier (not covered) runs in a dedicated App Service Environment.
 
+## Screenshots
+
+---
+![alt text](<Screenshot 2026-07-25 113639.png>)
+---
+![alt text](<Screenshot 2026-07-25 113358.png>)
+---
+![alt text](<Screenshot 2026-07-25 113449.png>)
+---
+![alt text](<Screenshot 2026-07-25 113651.png>)
+---
+![alt text](<Screenshot 2026-07-25 113745.png>)
+---
+![alt text](<Screenshot 2026-07-25 113806.png>)
+---
+![alt text](<Screenshot 2026-07-25 114003.png>)
+---
+![alt text](<Screenshot 2026-07-25 114054.png>)
+---
+![alt text](<Screenshot 2026-07-25 114237.png>)
+---
+![alt text](<Screenshot 2026-07-25 114253.png>)
+---
+![alt text](<Screenshot 2026-07-25 114435.png>)
+---
+![alt text](<Screenshot 2026-07-25 114502.png>)
+---
+![alt text](<Screenshot 2026-07-25 114512.png>)
+---
+![alt text](<Screenshot 2026-07-25 114825.png>)
+---
+![alt text](<Screenshot 2026-07-25 114921.png>)
+---
+![alt text](<Screenshot 2026-07-25 114941.png>)
+---
+
+## Lessons Learned
+- Scaling up unlocks advanced features (slots, autoscale, networking).  
+- Multiple apps can share one plan, reducing costs.  
+- Premium and Isolated tiers are best for production workloads.  

@@ -1,0 +1,42 @@
+[
+  {
+    "access": "Allow",
+    "destinationAddressPrefix": "*",
+    "destinationAddressPrefixes": [],
+    "destinationPortRange": "1433",
+    "destinationPortRanges": [],
+    "direction": "Inbound",
+    "etag": "W/\"252f75af-1ccd-4b16-b5bf-0addbf0a9563\"",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-vnet-subnets/providers/Microsoft.Network/networkSecurityGroups/nsg-db/securityRules/AllowSQLfromApp",
+    "name": "AllowSQLfromApp",
+    "priority": 100,
+    "protocol": "Tcp",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-vnet-subnets",
+    "sourceAddressPrefix": "10.0.2.0/24",
+    "sourceAddressPrefixes": [],
+    "sourcePortRange": "*",
+    "sourcePortRanges": [],
+    "type": "Microsoft.Network/networkSecurityGroups/securityRules"
+  },
+  {
+    "access": "Deny",
+    "destinationAddressPrefix": "*",
+    "destinationAddressPrefixes": [],
+    "destinationPortRange": "*",
+    "destinationPortRanges": [],
+    "direction": "Inbound",
+    "etag": "W/\"252f75af-1ccd-4b16-b5bf-0addbf0a9563\"",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-vnet-subnets/providers/Microsoft.Network/networkSecurityGroups/nsg-db/securityRules/DenyWebInbound",
+    "name": "DenyWebInbound",
+    "priority": 110,
+    "protocol": "*",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-vnet-subnets",
+    "sourceAddressPrefix": "10.0.1.0/24",
+    "sourceAddressPrefixes": [],
+    "sourcePortRange": "*",
+    "sourcePortRanges": [],
+    "type": "Microsoft.Network/networkSecurityGroups/securityRules"
+  }
+]

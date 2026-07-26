@@ -28,23 +28,36 @@ In a hub‑spoke architecture, you can deploy a single VPN/ER gateway in the hub
 ## Screenshots
 
 ---
+![alt text](<Screenshot 2026-07-26 195018.png>)
 ---
+![alt text](<Screenshot 2026-07-26 195104.png>)
 ---
+![alt text](<Screenshot 2026-07-26 195311.png>)
 ---
+![alt text](<Screenshot 2026-07-26 195401.png>)
 ---
+![alt text](<Screenshot 2026-07-26 195405.png>)
 ---
+![alt text](<Screenshot 2026-07-26 195433.png>)
 ---
+![alt text](<Screenshot 2026-07-26 195504.png>)
 ---
+![alt text](<Screenshot 2026-07-26 200955.png>)
 ---
+![alt text](<Screenshot 2026-07-26 202423.png>)
 ---
+![alt text](<Screenshot 2026-07-26 203042.png>)
 ---
+![alt text](<Screenshot 2026-07-26 203054.png>)
 ---
+![alt text](<Screenshot 2026-07-26 203150.png>)
 ---
+![alt text](<Screenshot 2026-07-26 203300.png>)
 ---
+![alt text](<Screenshot 2026-07-26 203307.png>)
 ---
+![alt text](<Screenshot 2026-07-26 203441.png>)
 ---
----
-
 
 ## Lessons Learned
 - Peering simplifies connectivity between VNets.  

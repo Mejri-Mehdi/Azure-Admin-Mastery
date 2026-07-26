@@ -1,0 +1,14 @@
+[
+  {
+    "addressPrefix": "0.0.0.0/0",
+    "etag": "W/\"790fae02-0779-458a-bf04-57b444b57f8c\"",
+    "hasBgpOverride": false,
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-udr/providers/Microsoft.Network/routeTables/rt-workload/routes/to-internet-via-nva",
+    "name": "to-internet-via-nva",
+    "nextHopIpAddress": "10.0.2.4",
+    "nextHopType": "VirtualAppliance",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-udr",
+    "type": "Microsoft.Network/routeTables/routes"
+  }
+]

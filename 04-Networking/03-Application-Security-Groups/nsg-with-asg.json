@@ -1,0 +1,57 @@
+[
+  {
+    "access": "Allow",
+    "destinationAddressPrefixes": [],
+    "destinationApplicationSecurityGroups": [
+      {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-asg/providers/Microsoft.Network/applicationSecurityGroups/asg-web-servers",
+        "resourceGroup": "rg-asg"
+      }
+    ],
+    "destinationPortRange": "80",
+    "destinationPortRanges": [],
+    "direction": "Inbound",
+    "etag": "W/\"cc910f8a-e9fb-4a94-9b04-fab448172045\"",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-asg/providers/Microsoft.Network/networkSecurityGroups/nsg-asg/securityRules/AllowHTTP-AppToWeb",
+    "name": "AllowHTTP-AppToWeb",
+    "priority": 100,
+    "protocol": "TCP",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-asg",
+    "sourceAddressPrefixes": [],
+    "sourceApplicationSecurityGroups": [
+      {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-asg/providers/Microsoft.Network/applicationSecurityGroups/asg-app-servers",
+        "resourceGroup": "rg-asg"
+      }
+    ],
+    "sourcePortRange": "*",
+    "sourcePortRanges": [],
+    "type": "Microsoft.Network/networkSecurityGroups/securityRules"
+  },
+  {
+    "access": "Allow",
+    "destinationAddressPrefixes": [],
+    "destinationApplicationSecurityGroups": [
+      {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-asg/providers/Microsoft.Network/applicationSecurityGroups/asg-web-servers",
+        "resourceGroup": "rg-asg"
+      }
+    ],
+    "destinationPortRange": "22",
+    "destinationPortRanges": [],
+    "direction": "Inbound",
+    "etag": "W/\"cc910f8a-e9fb-4a94-9b04-fab448172045\"",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-asg/providers/Microsoft.Network/networkSecurityGroups/nsg-asg/securityRules/AllowSSH-Management",
+    "name": "AllowSSH-Management",
+    "priority": 110,
+    "protocol": "TCP",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-asg",
+    "sourceAddressPrefix": "197.2.124.4",
+    "sourceAddressPrefixes": [],
+    "sourcePortRange": "*",
+    "sourcePortRanges": [],
+    "type": "Microsoft.Network/networkSecurityGroups/securityRules"
+  }
+]

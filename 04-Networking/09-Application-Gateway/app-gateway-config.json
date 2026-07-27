@@ -1,0 +1,236 @@
+{
+  "autoscaleConfiguration": {
+    "maxCapacity": 10,
+    "minCapacity": 0
+  },
+  "backendAddressPools": [
+    {
+      "backendAddresses": [],
+      "backendIPConfigurations": [
+        {
+          "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/networkInterfaces/vm-imagesVMNic/ipConfigurations/ipconfigvm-images",
+          "resourceGroup": "rg-appgw"
+        }
+      ],
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendAddressPools/images-pool",
+      "name": "images-pool",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/backendAddressPools"
+    },
+    {
+      "backendAddresses": [],
+      "backendIPConfigurations": [
+        {
+          "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/networkInterfaces/vm-apiVMNic/ipConfigurations/ipconfigvm-api",
+          "resourceGroup": "rg-appgw"
+        }
+      ],
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendAddressPools/api-pool",
+      "name": "api-pool",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/backendAddressPools"
+    }
+  ],
+  "backendHttpSettingsCollection": [
+    {
+      "cookieBasedAffinity": "Disabled",
+      "dedicatedBackendConnection": false,
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendHttpSettingsCollection/appGatewayBackendHttpSettings",
+      "name": "appGatewayBackendHttpSettings",
+      "pickHostNameFromBackendAddress": false,
+      "port": 80,
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "requestTimeout": 20,
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/backendHttpSettingsCollection",
+      "validateCertChainAndExpiry": true,
+      "validateSNI": true
+    }
+  ],
+  "backendSettingsCollection": [],
+  "defaultPredefinedSslPolicy": "AppGwSslPolicy20220101",
+  "enableFips": false,
+  "enableHttp2": true,
+  "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+  "firewallPolicy": {
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies/waf-policy-appgw",
+    "resourceGroup": "rg-appgw"
+  },
+  "frontendIPConfigurations": [
+    {
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/frontendIPConfigurations/appGwPublicFrontendIpIPv4",
+      "name": "appGwPublicFrontendIpIPv4",
+      "privateIPAllocationMethod": "Dynamic",
+      "provisioningState": "Succeeded",
+      "publicIPAddress": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/publicIPAddresses/pip-appgw",
+        "resourceGroup": "rg-appgw"
+      },
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/frontendIPConfigurations"
+    }
+  ],
+  "frontendPorts": [
+    {
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/frontendPorts/port_80",
+      "name": "port_80",
+      "port": 80,
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/frontendPorts"
+    }
+  ],
+  "gatewayIPConfigurations": [
+    {
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/gatewayIPConfigurations/appGatewayIpConfig",
+      "name": "appGatewayIpConfig",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-appgw",
+      "subnet": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/virtualNetworks/vnet-appgw/subnets/snet-appgw",
+        "resourceGroup": "rg-appgw"
+      },
+      "type": "Microsoft.Network/applicationGateways/gatewayIPConfigurations"
+    }
+  ],
+  "httpListeners": [
+    {
+      "customErrorConfigurations": [],
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "frontendIPConfiguration": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/frontendIPConfigurations/appGwPublicFrontendIpIPv4",
+        "resourceGroup": "rg-appgw"
+      },
+      "frontendPort": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/frontendPorts/port_80",
+        "resourceGroup": "rg-appgw"
+      },
+      "hostNames": [],
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/httpListeners/appGatewayHttpListener",
+      "name": "appGatewayHttpListener",
+      "protocol": "Http",
+      "provisioningState": "Succeeded",
+      "requireServerNameIndication": false,
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/httpListeners"
+    }
+  ],
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf",
+  "listeners": [],
+  "loadDistributionPolicies": [],
+  "location": "eastus",
+  "name": "appgw-waf",
+  "operationalState": "Running",
+  "privateEndpointConnections": [],
+  "privateLinkConfigurations": [],
+  "probes": [],
+  "provisioningState": "Succeeded",
+  "redirectConfigurations": [],
+  "requestRoutingRules": [
+    {
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "httpListener": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/httpListeners/appGatewayHttpListener",
+        "resourceGroup": "rg-appgw"
+      },
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/requestRoutingRules/app-routing-rule",
+      "name": "app-routing-rule",
+      "priority": 1,
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-appgw",
+      "ruleType": "PathBasedRouting",
+      "type": "Microsoft.Network/applicationGateways/requestRoutingRules",
+      "urlPathMap": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/urlPathMaps/app-routing-rule",
+        "resourceGroup": "rg-appgw"
+      }
+    }
+  ],
+  "resourceGroup": "rg-appgw",
+  "resourceGuid": "f753ac14-454c-4665-900a-d5de3cde968a",
+  "rewriteRuleSets": [],
+  "routingRules": [],
+  "sku": {
+    "family": "Generation_1",
+    "name": "WAF_v2",
+    "tier": "WAF_v2"
+  },
+  "sslCertificates": [],
+  "sslProfiles": [],
+  "tags": {},
+  "trustedClientCertificates": [],
+  "trustedRootCertificates": [],
+  "type": "Microsoft.Network/applicationGateways",
+  "urlPathMaps": [
+    {
+      "defaultBackendAddressPool": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendAddressPools/images-pool",
+        "resourceGroup": "rg-appgw"
+      },
+      "defaultBackendHttpSettings": {
+        "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendHttpSettingsCollection/appGatewayBackendHttpSettings",
+        "resourceGroup": "rg-appgw"
+      },
+      "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+      "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/urlPathMaps/app-routing-rule",
+      "name": "app-routing-rule",
+      "pathRules": [
+        {
+          "backendAddressPool": {
+            "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendAddressPools/images-pool",
+            "resourceGroup": "rg-appgw"
+          },
+          "backendHttpSettings": {
+            "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendHttpSettingsCollection/appGatewayBackendHttpSettings",
+            "resourceGroup": "rg-appgw"
+          },
+          "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+          "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/urlPathMaps/app-routing-rule/pathRules/images-target",
+          "name": "images-target",
+          "paths": [
+            "/images/*"
+          ],
+          "provisioningState": "Succeeded",
+          "resourceGroup": "rg-appgw",
+          "type": "Microsoft.Network/applicationGateways/urlPathMaps/pathRules"
+        },
+        {
+          "backendAddressPool": {
+            "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendAddressPools/api-pool",
+            "resourceGroup": "rg-appgw"
+          },
+          "backendHttpSettings": {
+            "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/backendHttpSettingsCollection/appGatewayBackendHttpSettings",
+            "resourceGroup": "rg-appgw"
+          },
+          "etag": "W/\"11f6e4f2-27a4-432c-ac57-177a1363c1af\"",
+          "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-appgw/providers/Microsoft.Network/applicationGateways/appgw-waf/urlPathMaps/app-routing-rule/pathRules/api-target",
+          "name": "api-target",
+          "paths": [
+            "/api/*"
+          ],
+          "provisioningState": "Succeeded",
+          "resourceGroup": "rg-appgw",
+          "type": "Microsoft.Network/applicationGateways/urlPathMaps/pathRules"
+        }
+      ],
+      "provisioningState": "Succeeded",
+      "resourceGroup": "rg-appgw",
+      "type": "Microsoft.Network/applicationGateways/urlPathMaps"
+    }
+  ],
+  "zones": [
+    "1",
+    "2",
+    "3"
+  ]
+}

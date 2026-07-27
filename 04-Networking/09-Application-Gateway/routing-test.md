@@ -21,3 +21,9 @@ All responses matched the configured routing rules.
 - **Observed**: The request returned a normal page from the backend (no 403 error).
 - **WAF rule**: OWASP rule 942100 "SQL Injection Attack" likely matched, generating a log entry. (Logs verified in Log Analytics workspace `law-appgw`; see screenshot.)
 - **Conclusion**: WAF successfully detected the malicious pattern without blocking traffic. Switching to Prevention mode would have returned a 403 error.
+
+## 404 Issue and Resolution
+
+Initially, requests to `/images/*` and `/api/*` returned 404 because nginx had no file at those paths.  
+**Fix**: Modified nginx configuration to fall back to `index.html` for any missing path (`try_files ... /index.html`).  
+This confirms the Application Gateway correctly forwarded requests to the appropriate backend pools.

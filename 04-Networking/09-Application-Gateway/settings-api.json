@@ -1,0 +1,3 @@
+{
+  "commandToExecute": "apt update && apt install -y nginx && echo 'API Server' > /var/www/html/index.html && systemctl restart nginx"
+}

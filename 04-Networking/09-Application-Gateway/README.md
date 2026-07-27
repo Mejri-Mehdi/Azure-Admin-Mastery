@@ -78,6 +78,8 @@
 ---
 ![alt text](<Screenshot 2026-07-27 201816.png>)
 ---
+![alt text](<Screenshot 2026-07-27 204807.png>)
+---
 
 ## Lessons Learned
 - Application Gateway adds Layer 7 intelligence beyond Load Balancer.  

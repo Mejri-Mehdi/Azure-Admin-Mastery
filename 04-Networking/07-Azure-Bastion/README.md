@@ -52,6 +52,8 @@ Azure Bastion is a fully managed PaaS service that provides secure, seamless RDP
 ---
 ![alt text](<Screenshot 2026-07-27 103401.png>)
 ---
+![alt text](<Screenshot 2026-07-27 105554.png>)
+---
 
 ## Lessons Learned
 - Bastion eliminates need for jump boxes.  

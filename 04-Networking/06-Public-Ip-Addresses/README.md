@@ -36,6 +36,8 @@ A public IP prefix provides a **reserved, contiguous block** of Standard public 
 ---
 ![alt text](<Screenshot 2026-07-27 094854.png>)
 ---
+![alt text](<Screenshot 2026-07-27 095248.png>)
+---
 
 ## Lessons Learned
 - Standard SKU is best practice for production workloads.  

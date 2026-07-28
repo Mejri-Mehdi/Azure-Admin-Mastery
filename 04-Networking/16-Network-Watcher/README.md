@@ -121,6 +121,10 @@ Azure Network Watcher provides a suite of tools to monitor, diagnose, and gain i
 ---
 ![alt text](<Screenshot 2026-07-28 202012.png>)
 ---
+![alt text](<Screenshot 2026-07-28 205240.png>)
+---
+![alt text](<Screenshot 2026-07-28 205434.png>)
+---
 
 ## Lessons Learned
 - Network Watcher provides visibility into NSG rules and routing.  

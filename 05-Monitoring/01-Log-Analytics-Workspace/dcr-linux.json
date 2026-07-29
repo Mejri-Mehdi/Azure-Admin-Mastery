@@ -1,0 +1,29 @@
+{
+  "location": "eastus",
+  "properties": {
+    "dataSources": {
+      "syslog": [
+        {
+          "streams": ["Microsoft-Syslog"],
+          "facilityNames": ["auth", "cron", "kern"],
+          "logLevels": ["Info", "Warning", "Error"],
+          "name": "syslogDataSource"
+        }
+      ]
+    },
+    "destinations": {
+      "logAnalytics": [
+        {
+          "workspaceResourceId": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-monitor/providers/Microsoft.OperationalInsights/workspaces/law-central",
+          "name": "law-dest"
+        }
+      ]
+    },
+    "dataFlows": [
+      {
+        "streams": ["Microsoft-Syslog"],
+        "destinations": ["law-dest"]
+      }
+    ]
+  }
+}

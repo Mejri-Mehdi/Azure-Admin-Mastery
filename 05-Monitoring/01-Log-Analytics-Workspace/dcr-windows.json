@@ -1,0 +1,44 @@
+{
+  "location": "eastus",
+  "properties": {
+    "dataSources": {
+      "windowsEventLogs": [
+        {
+          "streams": ["Microsoft-WindowsEvent"],
+          "xPathQueries": [
+            "Application!*",
+            "System!*",
+            "Security!*"
+          ],
+          "name": "eventLogsDataSource"
+        }
+      ],
+      "performanceCounters": [
+        {
+          "streams": ["Microsoft-Perf"],
+          "samplingFrequencyInSeconds": 60,
+          "counterSpecifiers": [
+            "\\Processor(_Total)\\% Processor Time",
+            "\\Memory\\% Committed Bytes In Use",
+            "\\LogicalDisk(_Total)\\% Free Space"
+          ],
+          "name": "perfCounterDataSource"
+        }
+      ]
+    },
+    "destinations": {
+      "logAnalytics": [
+        {
+          "workspaceResourceId": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-monitor/providers/Microsoft.OperationalInsights/workspaces/law-central",
+          "name": "law-dest"
+        }
+      ]
+    },
+    "dataFlows": [
+      {
+        "streams": ["Microsoft-WindowsEvent", "Microsoft-Perf"],
+        "destinations": ["law-dest"]
+      }
+    ]
+  }
+}

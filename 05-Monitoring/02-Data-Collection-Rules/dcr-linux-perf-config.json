@@ -1,0 +1,51 @@
+{
+  "dataFlows": [
+    {
+      "destinations": [
+        "law-dest"
+      ],
+      "streams": [
+        "Microsoft-Perf"
+      ]
+    }
+  ],
+  "dataSources": {
+    "performanceCounters": [
+      {
+        "counterSpecifiers": [
+          "Processor(*)\\% Processor Time"
+        ],
+        "name": "linuxCpuPerf",
+        "samplingFrequencyInSeconds": 60,
+        "streams": [
+          "Microsoft-Perf"
+        ]
+      }
+    ]
+  },
+  "destinations": {
+    "logAnalytics": [
+      {
+        "name": "law-dest",
+        "workspaceId": "20baa445-6d84-4a14-9a6b-5a3aa6ccfb3f",
+        "workspaceResourceId": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-monitor/providers/Microsoft.OperationalInsights/workspaces/law-central"
+      }
+    ]
+  },
+  "etag": "\"0f00ce5f-0000-0100-0000-6a6a289a0000\"",
+  "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-monitor/providers/Microsoft.Insights/dataCollectionRules/dcr-linux-perf",
+  "immutableId": "dcr-e28a22bdd06346938a157f86198859b5",
+  "location": "eastus",
+  "name": "dcr-linux-perf",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "rg-monitor",
+  "systemData": {
+    "createdAt": "2026-07-29T16:21:44.5510564Z",
+    "createdBy": "mehdimejri15@gmail.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2026-07-29T16:21:44.5510564Z",
+    "lastModifiedBy": "mehdimejri15@gmail.com",
+    "lastModifiedByType": "User"
+  },
+  "type": "Microsoft.Insights/dataCollectionRules"
+}

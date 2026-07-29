@@ -1,0 +1,12 @@
+{
+  "properties": {
+    "dataSources": {
+      "performanceCounters": [ ... ],
+      "windowsEventLogs": [ ... ]
+    },
+    "destinations": {
+      "logAnalytics": [ { "workspaceResourceId": "...", "name": "law-dest" } ]
+    },
+    "dataFlows": [ { "streams": [ "Microsoft-Perf", "Microsoft-WindowsEvent" ], "destinations": [ "law-dest" ] } ]
+  }
+}

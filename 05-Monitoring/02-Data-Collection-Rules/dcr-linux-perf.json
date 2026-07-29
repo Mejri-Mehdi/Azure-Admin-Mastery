@@ -1,0 +1,31 @@
+{
+  "location": "eastus",
+  "properties": {
+    "dataSources": {
+      "performanceCounters": [
+        {
+          "streams": ["Microsoft-Perf"],
+          "samplingFrequencyInSeconds": 60,
+          "counterSpecifiers": [
+            "Processor(*)\\% Processor Time"
+          ],
+          "name": "linuxCpuPerf"
+        }
+      ]
+    },
+    "destinations": {
+      "logAnalytics": [
+        {
+          "workspaceResourceId": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-monitor/providers/Microsoft.OperationalInsights/workspaces/law-central",
+          "name": "law-dest"
+        }
+      ]
+    },
+    "dataFlows": [
+      {
+        "streams": ["Microsoft-Perf"],
+        "destinations": ["law-dest"]
+      }
+    ]
+  }
+}

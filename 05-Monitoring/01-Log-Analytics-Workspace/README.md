@@ -24,22 +24,41 @@ Azure Monitor uses **Data Collection Rules (DCRs)** to define what telemetry to 
 ## Screenshots
 
 ---
+![alt text](<Screenshot 2026-07-29 160959.png>)
 ---
+![alt text](<Screenshot 2026-07-29 161018.png>)
 ---
+![alt text](<Screenshot 2026-07-29 161031.png>)
 ---
+![alt text](<Screenshot 2026-07-29 161115.png>)
 ---
+![alt text](<Screenshot 2026-07-29 161310.png>)
 ---
+![alt text](<Screenshot 2026-07-29 161324.png>)
 ---
+![alt text](<Screenshot 2026-07-29 162320.png>)
 ---
+![alt text](<Screenshot 2026-07-29 162403.png>)
 ---
+![alt text](<Screenshot 2026-07-29 164550.png>)
 ---
+![alt text](<Screenshot 2026-07-29 164616.png>)
 ---
+![alt text](<Screenshot 2026-07-29 164626.png>)
 ---
+![alt text](<Screenshot 2026-07-29 164932.png>)
 ---
+![alt text](<Screenshot 2026-07-29 165207.png>)
 ---
+![alt text](<Screenshot 2026-07-29 165241.png>)
 ---
+![alt text](<Screenshot 2026-07-29 165306.png>)
 ---
+![alt text](<Screenshot 2026-07-29 165605.png>)
 ---
+![alt text](<Screenshot 2026-07-29 165704.png>)
+---
+![alt text](<Screenshot 2026-07-29 165925.png>)
 ---
 
 ## Lessons Learned

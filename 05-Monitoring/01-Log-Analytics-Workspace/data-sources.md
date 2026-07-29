@@ -15,3 +15,8 @@
 - A **Data Collection Rule Association** links a DCR to a specific VM (or VMSS).
 - When the AMA agent on the VM polls for configuration, it applies the DCR and starts sending the specified data.
 - Associations can be created at the VM or at the subscription/resource group level for broader coverage.
+
+## Windows DCR Creation – Note on Event Logs
+- The initial creation failed because the `Event` table wasn't present in the workspace.
+- **Workaround**: Created DCR with only performance counters first. After ingestion began and the workspace became active, the DCR was updated to include Windows Event Logs.
+- This is a common real‑world scenario: some tables are lazily created upon first data arrival.

@@ -1,0 +1,74 @@
+// 1. Last heartbeat per computer (availability check)
+Heartbeat
+| where TimeGenerated > ago(24h)
+| summarize LastHeartbeat = max(TimeGenerated) by Computer
+
+// 2. Average CPU usage per hour
+Perf
+| where ObjectName == "Processor" and CounterName == "% Processor Time"
+| summarize AvgCPU = avg(CounterValue) by Computer, bin(TimeGenerated, 1h)
+
+// 3. Application errors in Event log
+Event
+| where EventLog == "Application" and EventLevelName == "Error"
+| summarize ErrorCount = count() by Computer
+
+// 4. Failed logins (Windows Security Event ID 4625)
+SecurityEvent
+| where EventID == 4625
+| summarize FailedLogins = count() by Account, Computer
+
+// 5. VM creation activity from Azure Activity log
+AzureActivity
+| where OperationName == "Create or Update Virtual Machine"
+| project TimeGenerated, Caller, ResourceGroup
+
+// 6. NSG rules evaluation (requires NSG diagnostic logs)
+AzureDiagnostics
+| where Category == "NetworkSecurityGroupEvent"
+| summarize EventCount = count() by direction_s, action_s
+
+// 7. Inbound connections from VMConnection (Service Map / VM Insights)
+VMConnection
+| where Direction == "inbound"
+| summarize Connections = count() by SourceIp, DestinationPort
+
+// 8. Sev1 alerts
+Alert
+| where Severity == "Sev1"
+| project TimeGenerated, AlertName, Description
+
+// 9. Storage blob read requests (requires storage diagnostic logs)
+StorageBlobLogs
+| where OperationName == "GetBlob"
+| summarize Requests = count() by CallerIpAddress, UserAgentHeader
+
+// 10. App Service HTTP errors (requires App Service logs)
+AppServiceHTTPLogs
+| where ScStatus >= 400
+| summarize ErrorCount = count() by CsUriStem, ScStatus
+
+// 11. Max CPU percentage from Azure Metrics
+AzureMetrics
+| where MetricName == "Percentage CPU"
+| summarize MaxCPU = max(Maximum) by Resource
+
+// 12. Syslog errors
+Syslog
+| where SeverityLevel == "err"
+| summarize ErrorCount = count() by HostName, ProcessName
+
+// 13. Missing updates from Update Management
+Update
+| where UpdateState == "Needed"
+| summarize MissingUpdates = count() by Computer
+
+// 14. Failed Azure Activity operations
+AzureActivity
+| where ActivityStatus == "Failed"
+| project TimeGenerated, Caller, OperationName, ActivityStatusValue
+
+// 15. Free disk space per computer
+Perf
+| where ObjectName == "LogicalDisk" and CounterName == "Free Megabytes"
+| summarize FreeSpace = min(CounterValue) by Computer, InstanceName

@@ -1,0 +1,35 @@
+{
+  "version": "Notebook/1.0",
+  "items": [
+    {
+      "type": 9,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "Perf\n| where ObjectName == \"Processor\" and CounterName == \"% Processor Time\"\n| summarize AvgCPU = avg(CounterValue) by Computer, bin(TimeGenerated, 1h)\n| order by Computer, TimeGenerated",
+        "size": 0,
+        "title": "CPU Usage by VM",
+        "timeContext": { "durationMs": 86400000 },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "crossComponentResources": ["/subscriptions/$(az account show --query id -o tsv)/resourcegroups/rg-monitor/providers/microsoft.operationalinsights/workspaces/law-central"]
+      },
+      "name": "cpu-usage"
+    },
+    {
+      "type": 9,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "Perf\n| where ObjectName == \"Processor\" and CounterName == \"% Processor Time\"\n| summarize MaxCPU = max(CounterValue) by Computer\n| top 10 by MaxCPU",
+        "size": 3,
+        "title": "Top 10 VMs by Maximum CPU",
+        "timeContext": { "durationMs": 86400000 },
+        "queryType": 0,
+        "resourceType": "microsoft.operationalinsights/workspaces",
+        "crossComponentResources": ["/subscriptions/$(az account show --query id -o tsv)/resourcegroups/rg-monitor/providers/microsoft.operationalinsights/workspaces/law-central"]
+      },
+      "name": "top-cpu"
+    }
+  ],
+  "styleSettings": {},
+  "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/Documentation/Schemas/workbook.json"
+}

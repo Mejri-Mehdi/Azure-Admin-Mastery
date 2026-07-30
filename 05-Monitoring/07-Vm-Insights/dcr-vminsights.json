@@ -1,0 +1,43 @@
+{
+  "location": "eastus",
+  "properties": {
+    "dataSources": {
+      "performanceCounters": [
+        {
+          "streams": ["Microsoft-InsightsMetrics"],
+          "samplingFrequencyInSeconds": 60,
+          "counterSpecifiers": [
+            "\\Processor(_Total)\\% Processor Time",
+            "\\Memory\\% Committed Bytes In Use",
+            "\\LogicalDisk(_Total)\\% Free Space",
+            "\\PhysicalDisk(_Total)\\Disk Transfers/sec",
+            "\\Network Interface(*)\\Bytes Total/sec"
+          ],
+          "name": "vmInsightsPerfCounters"
+        }
+      ],
+      "extensions": [
+        {
+          "streams": ["Microsoft-ServiceMap"],
+          "extensionName": "DependencyAgent",
+          "extensionSettings": {},
+          "name": "DependencyAgentDataSource"
+        }
+      ]
+    },
+    "destinations": {
+      "logAnalytics": [
+        {
+          "workspaceResourceId": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-monitor/providers/Microsoft.OperationalInsights/workspaces/law-central",
+          "name": "law-dest"
+        }
+      ]
+    },
+    "dataFlows": [
+      {
+        "streams": ["Microsoft-InsightsMetrics", "Microsoft-ServiceMap"],
+        "destinations": ["law-dest"]
+      }
+    ]
+  }
+}

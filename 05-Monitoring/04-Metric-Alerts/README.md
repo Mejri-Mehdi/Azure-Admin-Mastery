@@ -70,6 +70,8 @@ Every alert rule consists of:
 ---
 ![alt text](<Screenshot 2026-07-30 164339.png>)
 ---
+![alt text](<Screenshot 2026-07-30 170731.png>)
+---
 
 ## Lessons Learned
 - Alerts can be scoped to VM, resource, or subscription.  

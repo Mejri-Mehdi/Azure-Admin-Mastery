@@ -1,0 +1,63 @@
+[
+  {
+    "armRoleReceivers": [],
+    "automationRunbookReceivers": [],
+    "azureAppPushReceivers": [],
+    "azureFunctionReceivers": [],
+    "emailReceivers": [
+      {
+        "emailAddress": "mehdimejriµ15@gmail.com",
+        "name": "TEST_-EmailAction-",
+        "status": "Enabled",
+        "useCommonAlertSchema": false
+      }
+    ],
+    "enabled": true,
+    "eventHubReceivers": [],
+    "groupShortName": "Critical",
+    "id": "/subscriptions/9488B143-B2FA-4486-B0DB-5902BBE7CF00/resourceGroups/rg-alerts/providers/microsoft.insights/actionGroups/ag-critical-alerts",
+    "itsmReceivers": [],
+    "location": "eastus",
+    "logicAppReceivers": [],
+    "name": "ag-critical-alerts",
+    "resourceGroup": "rg-alerts",
+    "smsReceivers": [],
+    "type": "Microsoft.Insights/ActionGroups",
+    "voiceReceivers": [],
+    "webhookReceivers": [
+      {
+        "name": "test_webhook",
+        "serviceUri": "https://httpbin.org/post",
+        "useAadAuth": false,
+        "useCommonAlertSchema": true
+      }
+    ]
+  },
+  {
+    "armRoleReceivers": [],
+    "automationRunbookReceivers": [],
+    "azureAppPushReceivers": [],
+    "azureFunctionReceivers": [],
+    "emailReceivers": [],
+    "enabled": true,
+    "eventHubReceivers": [],
+    "groupShortName": "Remediate",
+    "id": "/subscriptions/9488B143-B2FA-4486-B0DB-5902BBE7CF00/resourceGroups/rg-alerts/providers/microsoft.insights/actionGroups/ag-auto-remediation",
+    "itsmReceivers": [],
+    "location": "eastus",
+    "logicAppReceivers": [],
+    "name": "ag-auto-remediation",
+    "resourceGroup": "rg-alerts",
+    "smsReceivers": [],
+    "type": "Microsoft.Insights/ActionGroups",
+    "voiceReceivers": [],
+    "webhookReceivers": [
+      {
+        "name": "auto_webhook",
+        "serviceUri": "https://httpbin.org/post",
+        "useAadAuth": false,
+        "useCommonAlertSchema": true
+      }
+    ]
+  }
+]

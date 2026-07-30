@@ -1,0 +1,107 @@
+[
+  {
+    "actions": [],
+    "autoMitigate": true,
+    "criteria": {
+      "allOf": [
+        {
+          "criterionType": "StaticThresholdCriterion",
+          "metricName": "Percentage CPU",
+          "metricNamespace": "Microsoft.Compute/virtualMachines",
+          "name": "Metric1",
+          "operator": "GreaterThan",
+          "skipMetricValidation": false,
+          "threshold": 80.0,
+          "timeAggregation": "Average"
+        }
+      ],
+      "odata.type": "Microsoft.Azure.Monitor.MultipleResourceMultipleMetricCriteria"
+    },
+    "description": "Alert when VM CPU exceeds 80% for 5 minutes",
+    "enabled": true,
+    "evaluationFrequency": "PT1M",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-alerts/providers/microsoft.insights/metricAlerts/VM-CPU-Over-80",
+    "location": "global",
+    "name": "VM-CPU-Over-80",
+    "resourceGroup": "rg-alerts",
+    "scopes": [
+      "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-alerts/providers/Microsoft.Compute/virtualMachines/vm-alert"
+    ],
+    "severity": 3,
+    "tags": {},
+    "targetResourceRegion": "eastus",
+    "targetResourceType": "Microsoft.Compute/virtualMachines",
+    "type": "Microsoft.Insights/metricAlerts",
+    "windowSize": "PT5M"
+  },
+  {
+    "actions": [],
+    "autoMitigate": true,
+    "criteria": {
+      "allOf": [
+        {
+          "criterionType": "StaticThresholdCriterion",
+          "metricName": "Availability",
+          "metricNamespace": "Microsoft.Storage/storageAccounts",
+          "name": "Metric1",
+          "operator": "LessThan",
+          "skipMetricValidation": false,
+          "threshold": 99.0,
+          "timeAggregation": "Average"
+        }
+      ],
+      "odata.type": "Microsoft.Azure.Monitor.SingleResourceMultipleMetricCriteria"
+    },
+    "description": "Alert when storage availability drops below 99%",
+    "enabled": true,
+    "evaluationFrequency": "PT1M",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-alerts/providers/microsoft.insights/metricAlerts/Storage-Availability-Below-99",
+    "location": "global",
+    "name": "Storage-Availability-Below-99",
+    "resourceGroup": "rg-alerts",
+    "scopes": [
+      "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-alerts/providers/Microsoft.Storage/storageAccounts/stgalertxyz123"
+    ],
+    "severity": 3,
+    "tags": {},
+    "targetResourceRegion": "eastus",
+    "targetResourceType": "Microsoft.Storage/storageAccounts",
+    "type": "Microsoft.Insights/metricAlerts",
+    "windowSize": "PT5M"
+  },
+  {
+    "actions": [],
+    "autoMitigate": true,
+    "criteria": {
+      "allOf": [
+        {
+          "criterionType": "StaticThresholdCriterion",
+          "metricName": "Http5xx",
+          "metricNamespace": "Microsoft.Web/sites",
+          "name": "Metric1",
+          "operator": "GreaterThan",
+          "skipMetricValidation": false,
+          "threshold": 10.0,
+          "timeAggregation": "Average"
+        }
+      ],
+      "odata.type": "Microsoft.Azure.Monitor.SingleResourceMultipleMetricCriteria"
+    },
+    "description": "Alert when HTTP 5xx errors exceed 10 in a 5minute window",
+    "enabled": true,
+    "evaluationFrequency": "PT1M",
+    "id": "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-alerts/providers/microsoft.insights/metricAlerts/App-Http-5xx-Errors",
+    "location": "global",
+    "name": "App-Http-5xx-Errors",
+    "resourceGroup": "rg-alerts",
+    "scopes": [
+      "/subscriptions/9488b143-b2fa-4486-b0db-5902bbe7cf00/resourceGroups/rg-alerts/providers/Microsoft.Web/sites/appalert2026xyz"
+    ],
+    "severity": 3,
+    "tags": {},
+    "targetResourceRegion": "canadacentral",
+    "targetResourceType": "Microsoft.Web/sites",
+    "type": "Microsoft.Insights/metricAlerts",
+    "windowSize": "PT5M"
+  }
+]

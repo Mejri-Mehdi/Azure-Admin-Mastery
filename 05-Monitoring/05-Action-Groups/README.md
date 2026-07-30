@@ -68,6 +68,8 @@ Both groups are attached to the VM CPU alert, storage availability alert, and Ap
 ---
 ![alt text](<Screenshot 2026-07-30 171758.png>)
 ---
+![alt text](<Screenshot 2026-07-30 172229.png>)
+---
 
 ## Lessons Learned
 - Action groups unify notifications and automation.  

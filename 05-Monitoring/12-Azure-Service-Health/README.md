@@ -36,19 +36,59 @@ Azure provides health visibility at three distinct layers:
 ## Screenshots
 
 ---
+![alt text](<Screenshot 2026-08-01 140751.png>)
 ---
+![alt text](<Screenshot 2026-08-01 140930.png>)
 ---
+![alt text](<Screenshot 2026-08-01 140951.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141227.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141235.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141301.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141332.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141346.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141600.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141623.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141634.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141639.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141739.png>)
 ---
+![alt text](<Screenshot 2026-08-01 141800.png>)
+---
+![alt text](<Screenshot 2026-08-01 141823.png>)
+---
+![alt text](<Screenshot 2026-08-01 141829.png>)
+---
+![alt text](<Screenshot 2026-08-01 142221.png>)
+---
+![alt text](<Screenshot 2026-08-01 142244.png>)
+---
+![alt text](<Screenshot 2026-08-01 142257.png>)
+---
+![alt text](<Screenshot 2026-08-01 142326.png>)
+---
+![alt text](<Screenshot 2026-08-01 142333.png>)
+---
+![alt text](<Screenshot 2026-08-01 143750.png>)
+---
+![alt text](<Screenshot 2026-08-01 143843.png>)
+---
+![alt text](<Screenshot 2026-08-01 143848.png>)
+---
+![alt text](<Screenshot 2026-08-01 143855.png>)
+---
+![alt text](<Screenshot 2026-08-01 143901.png>)
+---
+![alt text](<Screenshot 2026-08-01 143910.png>)
 ---
 
 ## Lessons Learned

@@ -90,6 +90,8 @@ Azure provides health visibility at three distinct layers:
 ---
 ![alt text](<Screenshot 2026-08-01 143910.png>)
 ---
+![alt text](<Screenshot 2026-08-01 170345.png>)
+---
 
 ## Lessons Learned
 - Service Health provides subscription‑specific visibility.  

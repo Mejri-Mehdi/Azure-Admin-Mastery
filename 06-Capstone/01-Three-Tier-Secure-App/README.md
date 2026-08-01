@@ -1,44 +1,46 @@
-# Three‑Tier Secure Application Architecture
+# Capstone: Three-Tier Secure Application
 
-## Overview
-This deployment implements a classic three‑tier architecture (web, application, database) on Azure with strong network segmentation, load balancing, backup, and monitoring.
+This deployment implements a production‑grade three‑tier architecture on Azure with security, backup, and monitoring.
 
 ## Architecture Layers
-- **Web tier**: Two Windows VMs behind a public Standard Load Balancer. Only HTTP/HTTPS allowed from the internet.
-- **App tier**: One Linux VM running business logic, accessible only from the web tier on port 8080.
-- **DB tier**: One Windows VM (SQL) accessible only from the app tier on port 1433.
+- **Web tier**: Two Windows VMs behind a public Load Balancer (HTTP/HTTPS).
+- **Application tier**: One Linux VM accessible only from web tier on port 8080.
+- **Database tier**: One Windows VM accessible only from app tier on port 1433.
 
-## Security Controls
-- Network Security Groups with least‑privilege rules.
-- No public IPs on app or DB VMs; Bastion for management.
-- Storage account for logs accessed via Private Endpoint.
-- Azure Policy enforces CostCenter tag and allowed regions.
-- RBAC: Dev team Contributor, Ops team Reader on the resource group.
+## Security
+- NSGs with least‑privilege rules per subnet.
+- No public IPs on app/db VMs; management via Azure Bastion.
+- Storage account logs accessible only via Private Endpoint.
+- Azure Policy enforces `CostCenter` tag and allowed regions.
+- RBAC: Dev team Contributor, Ops team Reader.
 
-## Backup & Monitoring
-- All VMs backed up daily with 30‑day retention.
-- Log Analytics workspace collects diagnostics.
-- CPU alert for web tier.
+## Backup and Monitoring
+- Daily backup of all VMs with 30‑day retention.
+- Log Analytics workspace for diagnostics.
+- CPU alert triggers when web VMs exceed 80% CPU.
 
 ## Deployment
-Deploy with `az deployment group create --template-file main.bicep --parameters adminUsername=... adminPassword=...`.
-Then run post‑deployment scripts for load balancer backend association, backup enablement, RBAC, and policy assignments.
+```powershell
+az deployment group create --resource-group rg-capstone --template-file main.bicep --parameters adminUsername=... adminPassword=...
+```
+
+# Then run post‑deployment scripts for LB backend, backup enablement, RBAC, and policy.
 
 ## Architecture Diagram
 
 ---
----
+![alt text](architecture-diagram.png)
 ---
 
 ## Screenshots
 
 ---
+![alt text](<Screenshot 2026-08-01 165329.png>)
 ---
+![alt text](<Screenshot 2026-08-01 171817.png>)
 ---
+![alt text](<Screenshot 2026-08-01 171833.png>)
 ---
-
-
-
 
 ## Lessons Learned
 - Proper subnet isolation enforces security boundaries.

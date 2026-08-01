@@ -67,7 +67,18 @@ All resources were deployed via Azure CLI. The VPN gateway provisioning can take
 ---
 ![alt text](<Screenshot 2026-08-01 185553.png>)
 ---
-
+![alt text](<Screenshot 2026-08-01 194700.png>)
+---
+![alt text](<Screenshot 2026-08-01 194744.png>)
+---
+![alt text](<Screenshot 2026-08-01 194809.png>)
+---
+![alt text](<Screenshot 2026-08-01 194825.png>)
+---
+![alt text](<Screenshot 2026-08-01 194831.png>)
+---
+![alt text](<Screenshot 2026-08-01 194834.png>)
+---
 
 ## Lessons Learned
 - Hub centralizes shared services and connectivity.  

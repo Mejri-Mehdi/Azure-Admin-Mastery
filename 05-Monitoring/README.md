@@ -1,7 +1,7 @@
 # 05 – Monitoring: Insights, Alerts, and Backup
 
 This section covers end‑to‑end Azure monitoring and business continuity. You centralized logs, built a KQL query library, created metric and log alerts, designed dashboards, enabled VM insights, configured backup policies, and set up disaster recovery with Azure Site Recovery. Each module adds a layer of operational visibility and resilience.
-
+ 
 ## Modules Overview
 
 | Module | Folder | What You Built |

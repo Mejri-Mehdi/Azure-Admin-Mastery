@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "backupManagementType": "AzureIaasVM",
+    "instantRPDetails": {},
+    "schedulePolicy": {
+      "schedulePolicyType": "SimpleSchedulePolicy",
+      "scheduleRunFrequency": "Hourly",
+      "scheduleRunInterval": 4,
+      "scheduleRunDays": null,
+      "scheduleRunTimes": null
+    },
+    "retentionPolicy": {
+      "retentionPolicyType": "SimpleRetentionPolicy",
+      "retentionDuration": {
+        "count": 7,
+        "durationType": "Days"
+      }
+    },
+    "timeZone": "UTC"
+  }
+}

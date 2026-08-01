@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "backupManagementType": "AzureIaasVM",
+    "workLoadType": "VM",
+    "schedulePolicy": {
+      "schedulePolicyType": "SimpleSchedulePolicy",
+      "scheduleRunFrequency": "Daily",
+      "scheduleRunTimes": [
+        "2026-08-01T03:00:00Z"
+      ]
+    },
+    "retentionPolicy": {
+      "retentionPolicyType": "LongTermRetentionPolicy",
+      "dailySchedule": {
+        "retentionTimes": [
+          "2026-08-01T03:00:00Z"
+        ],
+        "retentionDuration": {
+          "count": 30,
+          "durationType": "Days"
+        }
+      }
+    },
+    "timeZone": "UTC"
+  }
+}

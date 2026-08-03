@@ -1,4 +1,4 @@
-# <img width="100" height="100" alt="image" src="YOUR_IMAGE_URL" />  Azure Administrator Mastery — 86 Hands‑On Labs
+# <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/393f1321-2717-4254-9753-ca6e7d53226d" />  Azure Administrator Mastery — 86 Hands‑On Labs
 
 > *"I didn't just study for AZ‑104. I built Azure. Every service. Every scenario. From zero to production‑grade infrastructure."*
 

@@ -1,4 +1,4 @@
-# 🚀 Azure Administrator Mastery — 86 Hands‑On Labs
+# <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/393f1321-2717-4254-9753-ca6e7d53226d" />  Azure Administrator Mastery — 86 Hands‑On Labs
 
 > *"I didn't just study for AZ‑104. I built Azure. Every service. Every scenario. From zero to production‑grade infrastructure."*
 

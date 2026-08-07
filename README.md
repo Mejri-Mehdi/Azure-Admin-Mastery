@@ -142,6 +142,8 @@ azure-admin-mastery/
 │ ├── 06-resource-groups-and-tags/
 │ ├── 07-cost-management-basics/
 │ └── 08-naming-conventions/
+│ └── README.md
+│
 ├── 01-identity-governance/ # Entra ID, RBAC, Policy, Locks, Budgets
 │ ├── 01-entra-id-users-groups/
 │ ├── 02-entra-id-licenses/
@@ -156,6 +158,8 @@ azure-admin-mastery/
 │ ├── 11-management-groups/
 │ ├── 12-budgets-and-alerts/
 │ └── 13-azure-advisor/
+│ └── README.md
+│
 ├── 02-storage/ # Accounts, redundancy, tiers, lifecycle, security
 │ ├── 01-storage-account-types/
 │ ├── 02-redundancy-lrs-zrs-grs/
@@ -171,6 +175,8 @@ azure-admin-mastery/
 │ ├── 12-azcopy-and-storage-explorer/
 │ ├── 13-object-replication/
 │ └── 14-storage-encryption/
+│ └── README.md
+│
 ├── 03-compute/ # VMs, containers, App Service, IaC
 │ ├── 01-vm-deployment-portal/
 │ ├── 02-vm-deployment-cli/
@@ -191,6 +197,8 @@ azure-admin-mastery/
 │ ├── 17-app-service-networking/
 │ ├── 18-arm-template-modify/
 │ └── 19-bicep-deployment/
+│ └── README.md
+│
 ├── 04-networking/ # VNets, NSGs, LB, App Gateway, VPN, DNS
 │ ├── 01-vnet-and-subnets/
 │ ├── 02-nsg-rules/
@@ -208,6 +216,8 @@ azure-admin-mastery/
 │ ├── 14-vpn-gateway/
 │ ├── 15-expressroute-concepts/
 │ └── 16-network-watcher/
+│ └── README.md
+│
 ├── 05-monitoring/ # Logs, alerts, backup, Site Recovery
 │ ├── 01-log-analytics-workspace/
 │ ├── 02-data-collection-rules/
@@ -221,6 +231,8 @@ azure-admin-mastery/
 │ ├── 10-azure-site-recovery/
 │ ├── 11-backup-policies/
 │ └── 12-azure-service-health/
+│ └── README.md
+│
 ├── 06-capstone/ # Production-grade architectures
 │ ├── 01-three-tier-secure-app/
 │ ├── 02-hub-and-spoke-network/

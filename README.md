@@ -1,12 +1,12 @@
 <p align="center">
-  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/393f1321-2717-4254-9753-ca6e7d53226d" />
+  <img width="200" height="200" alt="Azure Mastery Badge" src="https://img.icons8.com/fluency/200/azure-1.png" />
 </p>
 
 ---
 
-# Azure Administrator Mastery — 86 Hands‑On Labs
+# Azure Mastery — 86 Hands‑On Labs
 
-> *"I didn't just study for AZ‑104. I built Azure. Every service. Every scenario. From zero to production‑grade infrastructure."*
+> *"I didn’t just read about Azure. I built it. Every service, every scenario. From bare resources to production‑grade infrastructure, 86 times over."*
 
 ---
 
@@ -16,7 +16,7 @@
 |----------------------------|------------------------------------------|
 | **Total Projects**         | 86 hands‑on labs                         |
 | **Time Invested**          | 178+ hours                               |
-| **Domains Covered**        | 5 AZ‑104 domains + Foundation + Capstone |
+| **Core Pillars Covered**   | Identity, Storage, Compute, Networking, Monitoring + Foundation & Capstone |
 | **Infrastructure as Code** | 40+ Bicep templates, 25+ ARM templates   |
 | **Automation Scripts**     | 120+ Azure CLI & PowerShell scripts      |
 | **Environments Built**     | Dev, Test, Prod, DR, Hub‑and‑Spoke       |
@@ -131,103 +131,104 @@ Monitoring: Log Analytics, Azure Monitor, KQL, Alerts, ASR, Backup
 ## 📂 Repository Structure
 
 ```
-azure-admin-mastery/
-├── 00-foundation/                                  # Portal, CLI, PowerShell, Bicep, ARM basics
-│   ├── 01-azure-portal-navigation/
-│   ├── 02-azure-cli-setup/
-│   ├── 03-powershell-setup/
-│   ├── 04-bicep-basics/
-│   ├── 05-arm-template-basics/
-│   ├── 06-resource-groups-and-tags/
-│   ├── 07-cost-management-basics/
-│   └── 08-naming-conventions/
-├── 01-identity-governance/						    # Entra ID, RBAC, Policy, Locks, Budgets
-│   ├── 01-entra-id-users-groups/
-│   ├── 02-entra-id-licenses/
-│   ├── 03-external-users-guest-access/
-│   ├── 04-sspr-configuration/
-│   ├── 05-rbac-built-in-roles/
-│   ├── 06-rbac-custom-roles/
-│   ├── 07-rbac-scope-inheritance/
-│   ├── 08-azure-policy-initiatives/
-│   ├── 09-resource-locks/
-│   ├── 10-tags-and-tag-policies/
-│   ├── 11-management-groups/
-│   ├── 12-budgets-and-alerts/
-│   └── 13-azure-advisor/
-├── 02-storage/									    # Accounts, redundancy, tiers, lifecycle, security
-│   ├── 01-storage-account-types/
-│   ├── 02-redundancy-lrs-zrs-grs/
-│   ├── 03-storage-firewalls-vnet-rules/
-│   ├── 04-blob-storage-tiers/
-│   ├── 05-blob-lifecycle-management/
-│   ├── 06-blob-soft-delete-versioning/
-│   ├── 07-sas-tokens-and-policies/
-│   ├── 08-access-keys-rotation/
-│   ├── 09-private-endpoint-storage/
-│   ├── 10-azure-files-shares/
-│   ├── 11-identity-based-access-files/
-│   ├── 12-azcopy-and-storage-explorer/
-│   ├── 13-object-replication/
-│   └── 14-storage-encryption/
-├── 03-compute/								    	# VMs, containers, App Service, IaC
-│   ├── 01-vm-deployment-portal/
-│   ├── 02-vm-deployment-cli/
-│   ├── 03-vm-deployment-bicep/
-│   ├── 04-vm-disks-and-encryption/
-│   ├── 05-vm-resize-and-move/
-│   ├── 06-availability-sets/
-│   ├── 07-availability-zones/
-│   ├── 08-vm-scale-sets/
-│   ├── 09-vm-custom-script-extension/
-│   ├── 10-azure-update-manager/
-│   ├── 11-container-registry/
-│   ├── 12-container-instances/
-│   ├── 13-container-apps/
-│   ├── 14-app-service-plan/
-│   ├── 15-app-service-scaling/
-│   ├── 16-app-service-slots/
-│   ├── 17-app-service-networking/
-│   ├── 18-arm-template-modify/
-│   └── 19-bicep-deployment/
-├── 04-networking/								   # VNets, NSGs, LB, App Gateway, VPN, DNS
-│   ├── 01-vnet-and-subnets/
-│   ├── 02-nsg-rules/
-│   ├── 03-application-security-groups/
-│   ├── 04-vnet-peering/
-│   ├── 05-user-defined-routes/
-│   ├── 06-public-ip-addresses/
-│   ├── 07-azure-bastion/
-│   ├── 08-azure-load-balancer/
-│   ├── 09-application-gateway/
-│   ├── 10-azure-dns-public/
-│   ├── 11-azure-dns-private/
-│   ├── 12-service-endpoints/
-│   ├── 13-private-endpoints/
-│   ├── 14-vpn-gateway/
-│   ├── 15-expressroute-concepts/
-│   └── 16-network-watcher/
-├── 05-monitoring/								    # Logs, alerts, backup, Site Recovery
-│   ├── 01-log-analytics-workspace/
-│   ├── 02-data-collection-rules/
-│   ├── 03-kql-queries/
-│   ├── 04-metric-alerts/
-│   ├── 05-action-groups/
-│   ├── 06-azure-dashboard/
-│   ├── 07-vm-insights/
-│   ├── 08-recovery-services-vault/
-│   ├── 09-vm-backup-restore/
-│   ├── 10-azure-site-recovery/
-│   ├── 11-backup-policies/
-│   └── 12-azure-service-health/
-├── 06-capstone/ 								   # Production-grade architectures
-│   ├── 01-three-tier-secure-app/
-│   ├── 02-hub-and-spoke-network/
-│   ├── 03-disaster-recovery-setup/
-│   └── 04-infrastructure-as-code/
-└── README.md
-```
 
+azure-admin-mastery/
+├── 00-foundation/ # Portal, CLI, PowerShell, Bicep, ARM basics
+│ ├── 01-azure-portal-navigation/
+│ ├── 02-azure-cli-setup/
+│ ├── 03-powershell-setup/
+│ ├── 04-bicep-basics/
+│ ├── 05-arm-template-basics/
+│ ├── 06-resource-groups-and-tags/
+│ ├── 07-cost-management-basics/
+│ └── 08-naming-conventions/
+├── 01-identity-governance/ # Entra ID, RBAC, Policy, Locks, Budgets
+│ ├── 01-entra-id-users-groups/
+│ ├── 02-entra-id-licenses/
+│ ├── 03-external-users-guest-access/
+│ ├── 04-sspr-configuration/
+│ ├── 05-rbac-built-in-roles/
+│ ├── 06-rbac-custom-roles/
+│ ├── 07-rbac-scope-inheritance/
+│ ├── 08-azure-policy-initiatives/
+│ ├── 09-resource-locks/
+│ ├── 10-tags-and-tag-policies/
+│ ├── 11-management-groups/
+│ ├── 12-budgets-and-alerts/
+│ └── 13-azure-advisor/
+├── 02-storage/ # Accounts, redundancy, tiers, lifecycle, security
+│ ├── 01-storage-account-types/
+│ ├── 02-redundancy-lrs-zrs-grs/
+│ ├── 03-storage-firewalls-vnet-rules/
+│ ├── 04-blob-storage-tiers/
+│ ├── 05-blob-lifecycle-management/
+│ ├── 06-blob-soft-delete-versioning/
+│ ├── 07-sas-tokens-and-policies/
+│ ├── 08-access-keys-rotation/
+│ ├── 09-private-endpoint-storage/
+│ ├── 10-azure-files-shares/
+│ ├── 11-identity-based-access-files/
+│ ├── 12-azcopy-and-storage-explorer/
+│ ├── 13-object-replication/
+│ └── 14-storage-encryption/
+├── 03-compute/ # VMs, containers, App Service, IaC
+│ ├── 01-vm-deployment-portal/
+│ ├── 02-vm-deployment-cli/
+│ ├── 03-vm-deployment-bicep/
+│ ├── 04-vm-disks-and-encryption/
+│ ├── 05-vm-resize-and-move/
+│ ├── 06-availability-sets/
+│ ├── 07-availability-zones/
+│ ├── 08-vm-scale-sets/
+│ ├── 09-vm-custom-script-extension/
+│ ├── 10-azure-update-manager/
+│ ├── 11-container-registry/
+│ ├── 12-container-instances/
+│ ├── 13-container-apps/
+│ ├── 14-app-service-plan/
+│ ├── 15-app-service-scaling/
+│ ├── 16-app-service-slots/
+│ ├── 17-app-service-networking/
+│ ├── 18-arm-template-modify/
+│ └── 19-bicep-deployment/
+├── 04-networking/ # VNets, NSGs, LB, App Gateway, VPN, DNS
+│ ├── 01-vnet-and-subnets/
+│ ├── 02-nsg-rules/
+│ ├── 03-application-security-groups/
+│ ├── 04-vnet-peering/
+│ ├── 05-user-defined-routes/
+│ ├── 06-public-ip-addresses/
+│ ├── 07-azure-bastion/
+│ ├── 08-azure-load-balancer/
+│ ├── 09-application-gateway/
+│ ├── 10-azure-dns-public/
+│ ├── 11-azure-dns-private/
+│ ├── 12-service-endpoints/
+│ ├── 13-private-endpoints/
+│ ├── 14-vpn-gateway/
+│ ├── 15-expressroute-concepts/
+│ └── 16-network-watcher/
+├── 05-monitoring/ # Logs, alerts, backup, Site Recovery
+│ ├── 01-log-analytics-workspace/
+│ ├── 02-data-collection-rules/
+│ ├── 03-kql-queries/
+│ ├── 04-metric-alerts/
+│ ├── 05-action-groups/
+│ ├── 06-azure-dashboard/
+│ ├── 07-vm-insights/
+│ ├── 08-recovery-services-vault/
+│ ├── 09-vm-backup-restore/
+│ ├── 10-azure-site-recovery/
+│ ├── 11-backup-policies/
+│ └── 12-azure-service-health/
+├── 06-capstone/ # Production-grade architectures
+│ ├── 01-three-tier-secure-app/
+│ ├── 02-hub-and-spoke-network/
+│ ├── 03-disaster-recovery-setup/
+│ └── 04-infrastructure-as-code/
+└── README.md
+
+```
 
 > **Every folder contains:**  
 > 📄 `README.md` — Architecture decisions and lessons learned  
@@ -240,7 +241,7 @@ azure-admin-mastery/
 
 ## 💡 Key Learnings
 
-- *"The exam tests whether you know the Microsoft way. These labs taught me **why** the Microsoft way exists."*
+- *"These labs taught me **why** the cloud works the way it does — not just which button to click."*
 - **RBAC scope inheritance is subtle** – a role at subscription level cascades down, but a deny assignment anywhere stops everything.
 - **Networking is layer‑upon‑layer** – Understanding that traffic hits NSG → Route Table → Destination → NSG again is the difference between a working app and a 3 AM outage.
 - **Storage redundancy isn’t just ‘more copies’** – GRS gives you geo‑protection but you can’t read from secondary until failover. RA‑GRS can, but costs more. The right choice depends on the business requirement, not the feature list.
@@ -251,17 +252,10 @@ azure-admin-mastery/
 
 ## 🚀 What I’m Ready For
 
-- **Azure Administrator** – Day‑one operational competence across compute, storage, networking, and identity
-- **Infrastructure as Code Engineer** – Bicep/ARM templating, modular design, CI/CD‑ready deployments
+- **Azure Administration** – Day‑one operational competence across compute, storage, networking, and identity
+- **Infrastructure as Code Engineering** – Bicep/ARM templating, modular design, CI/CD‑ready deployments
 - **Cloud Security** – Zero‑trust network design, least‑privilege access, compliance enforcement
 - **Site Reliability** – Monitoring, alerting, backup strategies, disaster recovery runbooks
-
----
-
-## 📜 Certification
-
-**AZ‑104: Microsoft Azure Administrator**  
-*Prepared through 178 hours of deliberate hands‑on practice, not memorization.*
 
 ---
 
